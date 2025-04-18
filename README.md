@@ -1,8 +1,8 @@
-# Operating Systems: Learning Journey 🚀
+# Operating Systems: Learning Journey
 
 This repository documents my learning journey through Operating Systems concepts, following the [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/) (OSTEP) book and its [homework assignments](https://github.com/remzi-arpacidusseau/ostep-homework).
 
-## Repository Structure 📂
+## Repository Structure
 
 ```
 .
@@ -18,16 +18,15 @@ This repository documents my learning journey through Operating Systems concepts
 │   │       ├── p2.cpp             # Process control
 │   │       ├── p3.cpp             # Process execution
 │   │       └── p4.cpp             # Complex process interactions
-│   ├── concurrency/               # Upcoming
-│   └── persistence/               # Upcoming
+│   └── concurrency/               # Upcoming
 ├── homework-solutions/            # My solutions to OSTEP homework
 ├── ostep-homework/               # Original OSTEP homework (submodule)
 └── README.md
 ```
 
-## Learning Progress 📚
+## Learning Progress
 
-### Completed Topics ✅
+### Completed Topics
 
 #### Virtualization
 
@@ -46,12 +45,12 @@ This repository documents my learning journey through Operating Systems concepts
   - Process control and management
   - Complex process interactions
 
-### Currently Learning 🎯
+### Currently Learning
 
 - Chapter 6: Direct Execution
 - Chapter 7: CPU Scheduling
 
-### Upcoming Topics 📋
+### Upcoming Topics
 
 #### Virtualization (Cont.)
 
@@ -71,15 +70,7 @@ This repository documents my learning journey through Operating Systems concepts
 - Concurrency Bugs
 - Event-based Concurrency
 
-#### Persistence
-
-- I/O Devices
-- Hard Disk Drives
-- RAID
-- Files and Directories
-- File System Implementation
-
-## Code Examples 💻
+## Code Examples
 
 ### Virtualization Examples
 
@@ -95,7 +86,7 @@ This repository documents my learning journey through Operating Systems concepts
 - **Process Execution** (`virtualization/Process-Api/p3.cpp`): exec() family usage
 - **Complex Interactions** (`virtualization/Process-Api/p4.cpp`): Advanced process control
 
-## Building and Running 🛠️
+## Building and Running
 
 Each code example can be compiled and run independently:
 
@@ -113,13 +104,13 @@ gcc -o p3 virtualization/Process-Api/p3.cpp
 gcc -o p4 virtualization/Process-Api/p4.cpp
 ```
 
-## Resources 📖
+## Resources
 
 - [OSTEP Book](http://pages.cs.wisc.edu/~remzi/OSTEP/)
 - [Official OSTEP Homework](https://github.com/remzi-arpacidusseau/ostep-homework)
 - [Man7 Linux Documentation](https://man7.org/)
 
-## Contributing 🤝
+## Contributing
 
 While this is a personal learning repository, if you spot errors or have suggestions:
 
@@ -127,7 +118,7 @@ While this is a personal learning repository, if you spot errors or have suggest
 2. Explain the problem/suggestion
 3. Reference relevant book chapter/homework
 
-## License 📄
+## License
 
 This repository is for educational purposes. Code samples are MIT licensed unless noted otherwise.
 
