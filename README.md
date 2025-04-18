@@ -4,35 +4,47 @@ This repository documents my learning journey through Operating Systems concepts
 
 ## Repository Structure 📂
 
-- `notes/`: Chapter-wise detailed notes
-  - `CH-01/`: Introduction and Dialogue
-  - `CH-03/`: Virtualization Dialogue
-  - `virtualization/`: CPU and Memory virtualization notes
-  - `concurrency/`: Threads, locks, and synchronization notes
-  - `persistence/`: Storage, I/O, and file systems notes
-- `homework-solutions/`: Solutions to OSTEP homework assignments
-  - `Simulation.cpp`: FCFS scheduler simulation
-  - `Performance-Measurement.cpp`: System performance measurement
-- `ostep-homework/`: Original homework assignments from OSTEP
-- `code/`: Additional code examples and experiments
+```
+.
+├── notes/
+│   ├── virtualization/
+│   │   ├── Introduction/           # Chapter 2
+│   │   │   ├── cpu.cpp            # CPU virtualization example
+│   │   │   ├── mem.cpp            # Memory virtualization example
+│   │   │   ├── thread.cpp         # Thread operations example
+│   │   │   └── io.cpp             # I/O operations example
+│   │   └── Process-Api/           # Chapter 4-5
+│   │       ├── p1.cpp             # Basic process creation
+│   │       ├── p2.cpp             # Process control
+│   │       ├── p3.cpp             # Process execution
+│   │       └── p4.cpp             # Complex process interactions
+│   ├── concurrency/               # Upcoming
+│   └── persistence/               # Upcoming
+├── homework-solutions/            # My solutions to OSTEP homework
+├── ostep-homework/               # Original OSTEP homework (submodule)
+└── README.md
+```
 
 ## Learning Progress 📚
 
 ### Completed Topics ✅
 
-#### Introduction
-
-- [x] Chapter 1: Dialogue
-- [x] Chapter 2: Introduction to Operating Systems
-
 #### Virtualization
 
-- [x] Chapter 3: Dialogue
+- [x] Chapter 2: Introduction to Operating Systems
+  - Basic OS concepts
+  - Virtualization examples (CPU, Memory, Threads, I/O)
+  - System call interface
 - [x] Chapter 4: Processes
+  - Process concept
+  - Process creation
+  - Process states
+  - Process management
 - [x] Chapter 5: Process API
   - fork(), exec(), and wait() implementations
   - File descriptor manipulation
   - Process control and management
+  - Complex process interactions
 
 ### Currently Learning 🎯
 
@@ -43,10 +55,13 @@ This repository documents my learning journey through Operating Systems concepts
 
 #### Virtualization (Cont.)
 
-- Memory Abstraction (Address Spaces, Memory API)
-- Address Translation, Segmentation
+- Memory Abstraction (Address Spaces)
+- Address Translation
+- Segmentation
 - Free-Space Management
-- Paging and Swapping
+- Paging and TLBs
+- Advanced Page Tables
+- Swapping Mechanisms
 
 #### Concurrency
 
@@ -64,47 +79,39 @@ This repository documents my learning journey through Operating Systems concepts
 - Files and Directories
 - File System Implementation
 
-## Homework Solutions Status ✅
+## Code Examples 💻
 
-### Virtualization
+### Virtualization Examples
 
-- [x] Process API (Chapter 5)
+- **CPU Virtualization** (`virtualization/Introduction/cpu.cpp`): Demonstrates basic CPU scheduling
+- **Memory Virtualization** (`virtualization/Introduction/mem.cpp`): Shows memory management
+- **Thread Operations** (`virtualization/Introduction/thread.cpp`): Basic thread handling
+- **I/O Operations** (`virtualization/Introduction/io.cpp`): Input/Output handling
 
-  - Process creation and control
-  - Variable sharing between processes
-  - File descriptor inheritance
-  - Process ordering with wait()
+### Process API Examples
 
-- [x] CPU Scheduling
-  - FCFS Scheduler Implementation
-  - Performance Metrics Analysis
-  - Context Switch Measurements
+- **Basic Process Creation** (`virtualization/Process-Api/p1.cpp`): Simple fork() example
+- **Process Control** (`virtualization/Process-Api/p2.cpp`): Process management
+- **Process Execution** (`virtualization/Process-Api/p3.cpp`): exec() family usage
+- **Complex Interactions** (`virtualization/Process-Api/p4.cpp`): Advanced process control
 
-## Notes Organization 📝
+## Building and Running 🛠️
 
-Each chapter's notes follow this structure:
+Each code example can be compiled and run independently:
 
-- Key Concepts and Terminology
-- Code Examples and Implementation
-- Common Pitfalls and Solutions
-- Practice Problems and Solutions
-- Additional Resources and References
+```bash
+# For Introduction examples
+gcc -o cpu virtualization/Introduction/cpu.cpp
+gcc -o mem virtualization/Introduction/mem.cpp
+gcc -o thread virtualization/Introduction/thread.cpp
+gcc -o io virtualization/Introduction/io.cpp
 
-## Environment Setup 🛠️
-
-Development Environment:
-
-- macOS Sonoma
-- GCC/Clang compiler
-- VS Code with C/C++ extensions
-- Make build system
-
-## Building and Running
-
-1. Clone the repository
-2. Navigate to homework-solutions
-3. Run `make` to build all programs
-4. Execute individual programs as needed
+# For Process API examples
+gcc -o p1 virtualization/Process-Api/p1.cpp
+gcc -o p2 virtualization/Process-Api/p2.cpp
+gcc -o p3 virtualization/Process-Api/p3.cpp
+gcc -o p4 virtualization/Process-Api/p4.cpp
+```
 
 ## Resources 📖
 
