@@ -44,11 +44,22 @@ This repository documents my learning journey through Operating Systems concepts
   - File descriptor manipulation
   - Process control and management
   - Complex process interactions
+- [x] Chapter 6: Direct Execution
+  - Limited direct execution implementation
+  - System call measurement tools
+  - Context switch cost analysis
+  - Performance optimization techniques
 
 ### Currently Learning
 
-- Chapter 6: Direct Execution
 - Chapter 7: CPU Scheduling
+  - Scheduling algorithms implementation
+  - Performance analysis and comparison
+  - Multi-level queue design
+- Chapter 8: Multi-level Feedback
+  - MLFQ scheduler implementation
+  - Queue management strategies
+  - Fairness analysis
 
 ### Upcoming Topics
 
